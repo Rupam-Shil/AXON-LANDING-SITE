@@ -35,7 +35,9 @@ export class ThreeInstance {
 		});
 
 		// OBJECT - WORLD
-		const worldTexture = new THREE.TextureLoader().load('/small-world.jpg');
+		const worldTexture = new THREE.TextureLoader().load(
+			'/images/small-world.jpg'
+		);
 
 		const worldGeometry = new THREE.SphereGeometry(1, 40, 40);
 		const worldMaterial = new THREE.MeshBasicMaterial({
@@ -44,7 +46,7 @@ export class ThreeInstance {
 		const world = new THREE.Mesh(worldGeometry, worldMaterial);
 		scene.add(world);
 		// OBJECT - CLOUD
-		const cloudTexture = new THREE.TextureLoader().load('/clouds.png');
+		const cloudTexture = new THREE.TextureLoader().load('/images/clouds.png');
 
 		const cloudGeometry = new THREE.SphereGeometry(1.01, 40, 40);
 		const cloudMaterial = new THREE.MeshBasicMaterial({

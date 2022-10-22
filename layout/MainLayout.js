@@ -1,7 +1,13 @@
 import React from 'react';
+import Topbar from './Topbar';
 
-function MainLayout() {
-	return <div>MainLayout</div>;
+function MainLayout({ children }) {
+	return (
+		<div>
+			<Topbar />
+			{children}
+		</div>
+	);
 }
 
 export default MainLayout;
