@@ -1,34 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useState } from 'react';
 import Styles from '../../../styles/scoped/Mobile.module.scss';
+import { musicCards } from '../data';
 import MusicCard from './MusicCard';
 function MobileMockup() {
-	const musicCard = [
-		{
-			songName: 'In The Garden',
-			type: ['Theta', 'Relax', 'Calm'],
-			fill: '#148AC5',
-			songLink: '/music/in-the-garden.mp3',
-		},
-		{
-			songName: 'Oh Freedom',
-			type: ['Theta', 'Resting', 'Somatic'],
-			fill: '#B77D8E',
-			songLink: '/music/oh-freedom.mp3',
-		},
-		{
-			songName: 'A Mighty Fortress',
-			type: ['Theta', 'Anxious', 'Trauma &'],
-			fill: '#8C6CA0',
-			songLink: '/music/a-mighty-fortress.mp3',
-		},
-		{
-			songName: 'Jesus Calls Us',
-			type: ['Delta', 'Focus', 'Calm'],
-			fill: '#5F9EB8',
-			songLink: '/music/jesus-calls-us.mp3',
-		},
-	];
+	const [audio, setAudio] = useState(null);
+	const [video, setVideo] = useState(null);
+	let playAudio = (link) => {
+		stopAudio();
+		const audioPlayer = new Audio(link);
+		setAudio(audioPlayer);
+		audioPlayer.play();
+	};
+
+	let stopAudio = () => {
+		if (audio) {
+			audio.pause();
+			setAudio(null);
+			setVideo(null);
+		}
+	};
 	return (
 		<div className={Styles.mobile}>
 			<img
@@ -37,16 +28,33 @@ function MobileMockup() {
 				className={Styles.img}
 			/>
 			<div className={Styles.con}>
-				{musicCard.map((card, i) => (
+				{musicCards.map((card, i) => (
 					<MusicCard
 						key={i}
 						songName={card.songName}
 						fill={card.fill}
 						types={card.type}
 						songLink={card.songLink}
+						onPlay={() => {
+							setVideo(card.videoLink);
+							playAudio(card.songLink);
+						}}
 					/>
 				))}
 			</div>
+			{video && (
+				<div className={Styles.video}>
+					<button
+						className={Styles.btn}
+						onClick={() => {
+							stopAudio();
+						}}
+					>
+						X
+					</button>
+					<video src={video} muted loop autoPlay></video>
+				</div>
+			)}
 		</div>
 	);
 }

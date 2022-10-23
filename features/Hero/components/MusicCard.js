@@ -5,12 +5,20 @@ function MusicCard({
 	types = ['a', 'b', 'c'],
 	fill = 'red',
 	songLink = '',
+	onPlay = null,
 }) {
 	return (
 		<div className={Styles.card}>
 			<div className={Styles.top}>
 				<div>{songName}</div>
-				<button className={Styles.btn}>Play Me</button>
+				<button
+					className={Styles.btn}
+					onClick={() => {
+						if (onPlay) onPlay();
+					}}
+				>
+					Play Me
+				</button>
 			</div>
 			<div className={Styles.type}>
 				{types.map((type, i) => (
