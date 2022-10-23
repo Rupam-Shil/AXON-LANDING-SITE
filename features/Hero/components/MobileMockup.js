@@ -42,7 +42,7 @@ function MobileMockup() {
 					/>
 				))}
 			</div>
-			{video && (
+			{video && audio && (
 				<div className={Styles.video}>
 					<button
 						className={Styles.btn}
