@@ -1,5 +1,38 @@
 .hero-section {
-	width: 100vw;
-	max-width: 100%;
-	min-height: 100vh;
+	width: min(1200px, 90%);
+	margin-top: 100px;
+	margin-inline: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.hero-header {
+		font-size: 3.5rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		p {
+			line-height: 100%;
+			span {
+				color: var(--text-primary);
+			}
+		}
+	}
+	.hero-actions {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+	}
+	.hero-mockup {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+		img {
+			user-select: none;
+		}
+		& > img:nth-child(1),
+		& > img:nth-child(3) {
+			height: auto;
+			width: 200px;
+		}
+	}
 }

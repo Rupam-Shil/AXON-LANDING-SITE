@@ -1,0 +1,17 @@
+.mobile {
+	height: 100%;
+	width: 250px;
+	position: relative;
+}
+.img {
+	width: 100%;
+}
+.con {
+	position: absolute;
+	width: 190px;
+	height: 290px;
+	background: red;
+	top: 120px;
+	left: 50%;
+	transform: translateX(-50%);
+}
