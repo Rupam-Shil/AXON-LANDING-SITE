@@ -39,6 +39,7 @@ body {
 	position: relative;
 	background: var(--bg-main);
 	color: var(--text-white);
+	user-select: none;
 }
 
 /* A elements that don't have a class get default styles */
