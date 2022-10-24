@@ -1,0 +1,25 @@
+.rotating-circle {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	.circle {
+		position: absolute;
+		width: 800px;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0), var(--blue-100-a5));
+		filter: blur(5px);
+		animation: circle-rotate 5s infinite linear;
+		transform-origin: 0 0;
+	}
+}
+@keyframes circle-rotate {
+	0%,
+	100% {
+		transform: rotate(232.632deg, 50, 50);
+	}
+	50% {
+		transform: rotate(0deg, 50, 50);
+	}
+}

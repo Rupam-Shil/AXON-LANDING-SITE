@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>Axon</title>
+				<link rel="shortcut icon" href="/images/axon-logo.ico" />
 			</Head>
 			{render ? (
 				<Component {...pageProps} />

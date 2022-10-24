@@ -3,7 +3,7 @@ import PrimaryButton from '../../components/utils/PrimaryButton';
 import MobileMockup from './components/MobileMockup';
 function HeroSection() {
 	return (
-		<section className="hero-section">
+		<section className="hero-section mb-20">
 			<div className="hero-header">
 				<p>
 					Your <span>all-in-one</span> app to keep
@@ -19,6 +19,12 @@ function HeroSection() {
 				<MobileMockup />
 				<img src="/images/mockup3.svg" alt="" />
 			</div>
+			<p className="hero-subheader ">
+				<span>Our therapy</span> opens the door to better mental health and
+				wellbeing.
+				<br />
+				That&apos;s the SOUND of ever changing <span>healing</span>
+			</p>
 		</section>
 	);
 }

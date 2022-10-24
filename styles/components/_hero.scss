@@ -35,4 +35,12 @@
 			width: 200px;
 		}
 	}
+	.hero-subheader {
+		font-size: 20px;
+		font-weight: 600;
+		span {
+			color: var(--blue-100);
+			font-weight: 800;
+		}
+	}
 }
