@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import PrimaryButton from '../../components/utils/PrimaryButton';
+import PrimaryButton from '../../../components/utils/PrimaryButton';
 import MobileMockup from './components/MobileMockup';
 function HeroSection() {
 	return (

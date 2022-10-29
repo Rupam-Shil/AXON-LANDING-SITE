@@ -10,16 +10,22 @@
 		border-radius: 50%;
 		background: linear-gradient(90deg, rgba(0, 0, 0, 0), var(--blue-100-a5));
 		filter: blur(5px);
-		animation: circle-rotate 5s infinite linear;
-		transform-origin: 0 0;
+		animation: circle-rotate 25s infinite linear;
+	}
+	.circle-2 {
+		width: 500px;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0), var(--purple-100-a5));
+
+		bottom: 0;
+		right: 0;
 	}
 }
 @keyframes circle-rotate {
 	0%,
 	100% {
-		transform: rotate(232.632deg, 50, 50);
+		rotate: 0deg;
 	}
 	50% {
-		transform: rotate(0deg, 50, 50);
+		rotate: 360deg;
 	}
 }

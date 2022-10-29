@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
-import Styles from '../../../styles/scoped/Mobile.module.scss';
+import Styles from '../../../../styles/scoped/Mobile.module.scss';
 import { musicCards } from '../data';
 import MusicCard from './MusicCard';
 function MobileMockup() {

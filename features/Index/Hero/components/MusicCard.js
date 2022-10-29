@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../../../styles/scoped/MusicCard.module.scss';
+import Styles from '../../../../styles/scoped/MusicCard.module.scss';
 function MusicCard({
 	songName = 'Test',
 	types = ['a', 'b', 'c'],
