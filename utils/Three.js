@@ -10,8 +10,8 @@ export class ThreeInstance {
 
 		// ON RESIZE
 		const size = {
-			width: window.innerWidth,
-			height: window.innerHeight,
+			width: 500,
+			height: 500,
 		};
 
 		// CAMERA
@@ -23,23 +23,12 @@ export class ThreeInstance {
 		);
 		camera.position.set(6, 0, 0);
 
-		// WINDOW RESIZE
-		document.addEventListener('resize', () => {
-			size.width = window.innerWidth;
-			size.height = window.innerHeight;
-			camera.aspect = size.width / size.height;
-			camera.updateProjectionMatrix();
-
-			renderer.setSize(size.width, size.height);
-			renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-		});
-
 		// OBJECT - WORLD
 		const worldTexture = new THREE.TextureLoader().load(
 			'/images/small-world.jpg'
 		);
 
-		const worldGeometry = new THREE.SphereGeometry(1, 40, 40);
+		const worldGeometry = new THREE.SphereGeometry(2, 40, 40);
 		const worldMaterial = new THREE.MeshBasicMaterial({
 			map: worldTexture,
 		});
@@ -48,7 +37,7 @@ export class ThreeInstance {
 		// OBJECT - CLOUD
 		const cloudTexture = new THREE.TextureLoader().load('/images/clouds.png');
 
-		const cloudGeometry = new THREE.SphereGeometry(1.01, 40, 40);
+		const cloudGeometry = new THREE.SphereGeometry(2.01, 40, 40);
 		const cloudMaterial = new THREE.MeshBasicMaterial({
 			map: cloudTexture,
 			transparent: true,

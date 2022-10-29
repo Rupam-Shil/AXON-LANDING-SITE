@@ -1,0 +1,35 @@
+.world-con {
+	width: min(1300px, 90%);
+	margin: 150px auto 0 auto;
+	text-align: center;
+	.top {
+		.header {
+			font-size: 4rem;
+			line-height: 120%;
+			font-weight: 800;
+			text-transform: uppercase;
+			span {
+				color: var(--text-primary);
+			}
+			margin-bottom: 1rem;
+		}
+		.sub-header {
+			font-size: 1.5rem;
+			margin-bottom: 3rem;
+		}
+		.column {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 5rem;
+			#three {
+				width: 500px;
+				height: 500px;
+			}
+			p {
+				font-size: 2rem;
+				font-weight: 400;
+			}
+		}
+	}
+}

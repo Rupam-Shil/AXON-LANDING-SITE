@@ -1,7 +1,6 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import HeroSection from '../features/Index/Hero';
 import SubHero from '../features/Index/SubHero';
+import World from '../features/Index/World';
 import MainLayout from '../layout/MainLayout';
 
 export default function Home() {
@@ -9,6 +8,7 @@ export default function Home() {
 		<MainLayout>
 			<HeroSection />
 			<SubHero />
+			<World />
 		</MainLayout>
 	);
 }

@@ -16,7 +16,6 @@ function SubHero() {
 	const addScrollTrigger = (item, options = {}) => {
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
-				console.log(entry.intersectionRatio);
 				entry.target.classList.toggle('active', entry.isIntersecting);
 			});
 		}, options);
