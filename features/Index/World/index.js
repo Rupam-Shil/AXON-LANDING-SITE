@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import PrimaryButton from '../../../components/utils/PrimaryButton';
 import { ThreeInstance } from '../../../utils/Three';
 
 function World() {
@@ -35,10 +36,16 @@ function World() {
 				<div className="sub-header">
 					But access to mental health care should&apos;t be one...
 				</div>
-				<div className="column">
+				<div className="world-column">
 					<canvas id="three"></canvas>
 					<p className="changing-text">{textArray[currentIndex]}</p>
 				</div>
+			</div>
+			<div className=" bottom mt-20">
+				<p>
+					It starts with Choosing <span>to amplify you brain power.</span>
+				</p>
+				<PrimaryButton text="download now" />
 			</div>
 		</div>
 	);

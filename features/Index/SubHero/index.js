@@ -37,7 +37,7 @@ function SubHero() {
 				<div className="sub-hero-option-con">
 					<div className="options">Sleep better/Stress</div>
 					<div className="options">Concentrate and focus</div>
-					<div className="options">Improve my braisn function</div>
+					<div className="options">Improve my brain function</div>
 					<div className="options">Daily remainders</div>
 					<div className="options">Feel Empowered</div>
 					<div className="options">Daily Checkup with Dr.</div>
