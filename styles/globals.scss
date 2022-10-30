@@ -1,2 +1,36 @@
 @import './utils/index';
 @import './components/index';
+
+.isDesktop {
+	display: block;
+}
+.isMobile {
+	display: none;
+}
+@media only screen and (max-width: 900px) {
+	.isDesktop {
+		display: none;
+	}
+	.isMobile {
+		padding: 0 2rem;
+		img {
+			width: 100px;
+			height: auto;
+		}
+		display: flex;
+		gap: 2rem;
+		flex-direction: column;
+		font-size: 1.5rem;
+		display: flex;
+		width: 100vw;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-weight: 900;
+		text-transform: uppercase;
+		span {
+			color: var(--text-primary);
+		}
+	}
+}
