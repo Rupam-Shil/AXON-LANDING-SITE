@@ -1,3 +1,4 @@
+import GetStarted from '../features/Index/GetStarted';
 import HeroSection from '../features/Index/Hero';
 import SubHero from '../features/Index/SubHero';
 import World from '../features/Index/World';
@@ -9,6 +10,7 @@ export default function Home() {
 			<HeroSection />
 			<SubHero />
 			<World />
+			<GetStarted />
 		</MainLayout>
 	);
 }
