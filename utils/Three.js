@@ -63,7 +63,6 @@ export class ThreeInstance {
 		// TICK
 		const tick = () => {
 			world.rotation.y += 0.0005;
-
 			cloud.rotation.y -= 0.001;
 			controls.update();
 			renderer.render(scene, camera);

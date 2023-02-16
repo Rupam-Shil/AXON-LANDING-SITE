@@ -12,7 +12,7 @@ function HeroSection() {
 			</div>
 			<div className="hero-actions mt-16">
 				<PrimaryButton />
-				<PrimaryButton type="secondary" text="Try it for teams" />
+				<PrimaryButton type="secondary" text="Try it for organization" />
 			</div>
 			<div className="hero-mockup mt-16 mb-16">
 				<img src="/images/mockup1.svg" alt="" />

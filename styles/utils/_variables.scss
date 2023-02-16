@@ -1,8 +1,34 @@
-:root {
+// :root {
+// 	--bg-main: #1f0273;
+// 	--text-white: #fff;
+// 	--text-primary: #ed1c90;
+// 	--purple-light: #8166e6;
+// 	--blue-100: #1ecbff;
+// 	--blue-200: #7ccaf4;
+// 	--purple-200: #6863ad;
+// 	--blue-100-a5: rgba(30, 203, 255, 0.5);
+// 	--purple-100-a5: rgba(79, 9, 160, 0.5);
+// }
+.dark-theme {
 	--bg-main: #1f0273;
 	--text-white: #fff;
+	--card-text: #fff;
+	--button-text: #1f0273;
 	--text-primary: #ed1c90;
 	--purple-light: #8166e6;
+	--blue-100: #1ecbff;
+	--blue-200: #7ccaf4;
+	--purple-200: #6863ad;
+	--blue-100-a5: rgba(30, 203, 255, 0.5);
+	--purple-100-a5: rgba(79, 9, 160, 0.5);
+}
+.light-theme {
+	--bg-main: #fff;
+	--text-white: #333;
+	--button-text: #333;
+	--card-text: #fff;
+	--text-primary: #ed1c90;
+	--purple-light: #fff;
 	--blue-100: #1ecbff;
 	--blue-200: #7ccaf4;
 	--purple-200: #6863ad;
